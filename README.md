@@ -5,13 +5,18 @@ Instructions for building picom-dccsillag on void linux using xbps-src:
     Setup the void-packages repo:
 
 ❯ git clone --depth=1 https://github.com/void-linux/void-packages
+
 ❯ cd void-packages
+
 ❯ ./xbps-src binary-bootstrap
+
 ❯ echo XBPS_ALLOW_RESTRICTED=yes >> etc/conf
+
 
     Download the template repo and copy into srcpkgs:
 
 ❯ git clone https://github.com/evfeal/picom-dccsillag-template
+
 ❯ mv picom-dccsillag-template ./srcpkgs/picom-dccsillag
 
     Build & install the package:
